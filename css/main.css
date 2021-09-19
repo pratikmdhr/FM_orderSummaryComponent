@@ -1,0 +1,131 @@
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box; }
+
+body {
+  font-family: 'Red Hat Display', sans-serif;
+  font-size: 16px;
+  height: 100vh;
+  width: 100%;
+  background: url("/dist/images/pattern-background-desktop.svg");
+  background-repeat: no-repeat;
+  background-size: 2000px 50%;
+  color: #7280a7;
+  position: relative; }
+
+body::before {
+  content: '';
+  position: absolute;
+  top: 0;
+  left: 0;
+  background: #e0e8ff;
+  width: 100%;
+  height: 100%;
+  background-size: contain;
+  opacity: 0.6; }
+
+h1 {
+  color: #333;
+  font-weight: 900; }
+
+h4 {
+  color: #333;
+  font-weight: 500; }
+
+.container {
+  display: flex;
+  height: 100%;
+  align-items: center;
+  justify-content: center;
+  text-align: center; }
+
+.flex-container {
+  background: #fff;
+  width: 450px;
+  height: 800px;
+  border-radius: 20px;
+  display: flex;
+  flex-direction: column;
+  justify-content: stretch;
+  align-items: center;
+  text-align: center;
+  position: relative;
+  border-bottom-left-radius: 20px;
+  border-bottom-right-radius: 20px; }
+
+@media (max-width: 376px) {
+  .flex-container {
+    width: 90%;
+    height: 90%; } }
+
+.flex-container .hero {
+  height: 35%;
+  width: 100%;
+  background: url("/dist/images/illustration-hero.svg") no-repeat center center/cover;
+  border-top-left-radius: 20px;
+  border-top-right-radius: 20px; }
+
+.flex-container .content {
+  width: 80%;
+  padding: 3rem 0;
+  display: block; }
+
+.flex-container .content > p {
+  padding: 1.5em 0.5em; }
+
+.flex-container .content .rate {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  width: 100%;
+  background: #f5f7ff;
+  padding: 1.5em 0;
+  border-radius: 15px;
+  margin: 1em 0 2em 0; }
+
+.flex-container .content .rate > img,
+.flex-container .content .rate > p {
+  padding: 0 1.2em; }
+
+.flex-container .content .rate a {
+  font-weight: 700;
+  color: #3829e0; }
+
+.flex-container .content .rate a:hover {
+  text-decoration: none;
+  opacity: 0.8; }
+
+.flex-container .content .rate .plan {
+  display: block;
+  text-align: left;
+  width: 60%; }
+
+.flex-container .content > *:nth-child(4) {
+  display: block;
+  width: 100%;
+  padding: 1.2em;
+  border-radius: 10px;
+  background: #3829e0;
+  color: #fff;
+  text-decoration: none;
+  margin: 1em 0 2em 0;
+  box-shadow: 5px 20px 15px #e0e8ff; }
+
+.flex-container .content > *:nth-child(4):hover {
+  opacity: 0.8;
+  cursor: pointer; }
+
+.flex-container .content > *:nth-child(4) a {
+  text-decoration: none;
+  font-size: 15px;
+  font-weight: 700;
+  color: #fff; }
+
+.flex-container .content > *:last-child {
+  text-decoration: none;
+  color: #7280a7;
+  font-weight: 700; }
+
+.flex-container .content > *:last-child:hover {
+  color: #333; }
